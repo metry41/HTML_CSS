@@ -1,0 +1,4 @@
+body>ol {list-style-type: decimal-leading-zero; width: 30%;}
+ol>li>ol {list-style-type: upper-alpha}
+ul {list-style-image: url("bullet_ball_green.png")}
+ul li:nth-child(2n) {background-color: papayawhip}
