@@ -1,6 +1,24 @@
   * {box-sizing: border-box}
-    header {}
+  @import url('https://fonts.googleapis.com/css?family=Ravi+Prakash');@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+  h1 {text-align: center;
+    font-size: 3.5em;
+    text-shadow: 7px 7px 7px green;
+    color:red;font-family: 'Ravi Prakash', cursive;}
+    header {text-align: center; font-size: 25px; }
+    body {background-color: cornsilk;background-image: url(/ejercicio18/img/fondo.jpg)}
 
-     div {width: 70%; float: left}
-     span>strong {text-underline-position: auto}
-/* comentario   */
+     figure#imagen1 {width: 30%; float: left}
+     figure#imagen2 {width: auto; float: left; padding: 10px; margin: 0px}
+     strong {text-decoration: underline}
+    ul {width: 20%; float:right; border-style: dashed; list-style-type: none;
+        background-color: aqua}
+    
+    #parr1 {width: 46%; float: left; clear: left; margin: 1% 2%;font-family: 'Indie Flower', cursive;}
+    #parr2 {width: 47%; float: left; margin: 0.5% 2% 1% 1%;font-family: 'Indie Flower', cursive;}
+
+footer {
+  position: relative;
+  margin-top: -63px; 
+  height: 63px;
+  clear:both;
+  width:100%}
