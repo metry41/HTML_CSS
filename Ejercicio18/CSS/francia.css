@@ -5,7 +5,7 @@
     text-shadow: 7px 7px 7px green;
     color:red;font-family: 'Ravi Prakash', cursive;}
     header {text-align: center; font-size: 25px; }
-    body {background-color: cornsilk;background-image: url(/ejercicio18/img/fondo.jpg)}
+    body {background-color: cornsilk;background-image: url(../img/fondo.jpg)}
 
      figure#imagen1 {width: 30%; float: left}
      figure#imagen2 {width: auto; float: left; padding: 10px; margin: 0px}
