@@ -1,141 +1,97 @@
 *, *::before, *::after, *:before, *:after { 
     box-sizing : border-box;
     }
-
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');    
+#todo {
+    width: 90%;
+    margin: 2em;
+    max-width: 1024px;
+}
 header {
-    background-color: maroon;
-    color : papayawhip;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    background-color: springgreen;
+    color : blue;
     text-align: center;
-}
-
-nav {
-    border: 2px solid maroon;
-    overflow: auto;
-}
-
-nav>ul {
-    list-style: none;
-}
-
-nav>ul>li {
-    display: inline-block;
-    padding: 1em;
-}
-/*Submenu oculto*/
-nav>ul>li>ul {
-    display: none;
-    color: black;
-    width: 100%;
-}
-/*Submenu al hacerse visible
-nav>ul>li:hover>ul {
-    display: block;
-    border: 1px solid;
-    background-color: white;
-    position : absolute;
-    top: 2em;
-}*/
-/*Items del segundo nivel*/
-/*nav>ul>li>ul>li {
-    width: 100%;
-    min-height: 2em;
-    height: 100%
-}*/
-
-nav li:hover {
-    display: block;
-    cursor: pointer;
-    background-color: blue;
-    color: whitesmoke;
-}
-
-article>section {
-    width: 69%;
-    margin-right: 2%;
-    padding: 2em;
-    float: left;
-}
-
-div>section {
-    width: 29%;
-    padding: 1em;
-    float: left;
-}
-
-/*nav ul, nav li{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}*/
-
-footer {
-    border-top: 1px solid maroon;
-    position: fixed;
-    bottom: 0px;
-
-}
-
-/* menu del profesor:
-nav {
-    border: 1px solid maroon;
-}
-
-nav ul, nav li{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    text-shadow: 0.5em;
 }
 
 nav ul {
     list-style: none;
 }
 
-nav li:hover {
-    cursor: pointer;
+article {
+    width: 34%;
+    margin-right: 2%;
+    padding-right: 2em;
+    float: left;
+}
+
+footer {
+    border-top: 1px solid maroon;
+    position: fixed;
+    bottom: 0px;
+}
+@media only screen and (max-width: 700px) {
+    aside {
+        clear: both;
+    }
+}
+
+/* menu del profesor:
+*, *::before, *::after, *:before, *:after { 
+    box-sizing : border-box;
+    }
+
+body {
+    width: 90%;
+    margin: 2em auto;
+}
+
+header {
     background-color: maroon;
-    color: papayawhip;
+    color : papayawhip;
+    width : 100%;
+    /* Hace que el tamaÃ±o del header englobe los mÃ¡rgenes del h1*/
+    /*float:left;   
+    height: 3em;
+    padding-left: 1em;
+    margin: 2em 0em;
 }
 
-/*Items en cualquier nivel
-nav ul>li {
+body>section, body>div {
+    float: left;
+}
+
+body>section {
+    width: 69%;
+    margin-right: 2%;
+    padding: 2em;
+}
+
+body>div {
+    width: 29%;
+    padding: 1em;
+}
+
+.clear_fix {
+    clear: both;
+}
+
+article>div {
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-color: gainsboro
+}
+
+
+article p:nth-of-type(1) {
+    margin-top: 0;
+}
+
+footer {
+    border-top: 1px solid maroon;
+    padding: 2em 1em;
+    width: 100%;
     text-align: center;
-    height: 2em;
-    padding-top: 0.5em;
-}
-
-/*Items del primer nivel
-nav>ul>li {
-    display: inline-block;
-    width: 13%;
-    position: relative
-}
-
-/*Submenu oculto 
-nav>ul>li>ul {
-    display: none;
-    color: black;
-    width: 100%;
-}
-
-/*Submenu al hacerse visible
-nav>ul>li:hover>ul {
-    display: block;
-    border: 1px solid;
-    background-color: white;
-    position : absolute;
-    top: 2em;
-}
-
-/*Items del segundo nivel
-nav>ul>li>ul>li {
-    width: 100%;
-    min-height: 2em;
-    height: 100%
 }*/
