@@ -7,6 +7,11 @@
     margin: 2em;
     max-width: 1024px;
 }
+
+img {
+    width: 100%;
+    max-width: 1024px;
+}
 header {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.5em;
@@ -16,27 +21,52 @@ header {
     text-shadow: 0.5em;
 }
 
-nav ul {
-    list-style: none;
-}
-
 article {
     width: 34%;
     margin-right: 2%;
     padding-right: 2em;
     float: left;
 }
+blockquote {
+  quotes: "«" "»";
+}
+blockquote:before { content: open-quote; }
+blockquote:after  { content: close-quote; }
 
+aside {
+    width: 28%;
+    float: left;
+}
+#menu2{
+    display: none;
+}
+
+/*Pié de página*/
 footer {
     border-top: 1px solid maroon;
     position: fixed;
     bottom: 0px;
 }
-@media only screen and (max-width: 700px) {
-    aside {
-        clear: both;
+/*Mediaqueris*/
+
+@media only screen and (max-width: 768px) {
+    article{width: 100%;}
+    img{width: 50%}
+    aside{width: 100%}
+}
+@media only screen and (max-width: 480px) {
+    article{width: 100%;}
+    img{width: 50%}
+    aside{width: 100%}
+    #menu{display: none}
+    #menu2{
+        display: block;
+        position: fixed;
+        bottom: 0%;
+        
     }
 }
+
 
 /* menu del profesor:
 *, *::before, *::after, *:before, *:after { 

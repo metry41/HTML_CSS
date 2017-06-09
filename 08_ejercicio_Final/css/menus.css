@@ -1,6 +1,5 @@
 
-nav {
-    border: 2px solid maroon;
+#menu nav {
     overflow: auto;
     color: blue;
     height: auto;
@@ -8,19 +7,37 @@ nav {
     margin-bottom: 2em;
 }
 
-nav>ul>li {
+#menu nav ul {
+    list-style: none;
+}
+#menu li{
+    display: block;
+    background-color: whitesmoke;
+    border: 2px solid springgreen;
+    text-align: center;
+    border-radius: 0.5em 0.5em;
+    padding-left: 0.5em;
+}
+
+#menu li:hover {
+    background-color: springgreen;
+    color: blue;
+    cursor: pointer;
+}
+
+#menu nav>ul>li {
     display: inline-block;
     padding-right: 3em;
 }
 /*Submenu oculto*/
-ul li ul {
+#menu ul li ul {
     display: none;
     color: black;
     width: 100%;
 }
 
 /*Items del segundo nivel*/
-nav>ul>li>ul>li {
+#menu nav>ul>li>ul>li {
     width: 100%;
     min-height: 2em;
     height: 100%;
@@ -29,22 +46,73 @@ nav>ul>li>ul>li {
 }
 
 /*Submenu al hacerse visible*/
-nav li:hover>ul {
+#menu nav li:hover>ul {
     display: block;
     border: 2px solid blue;
     cursor: pointer;
     background-color: springgreen;
     color: blue;
     position: absolute;
-    width: 15%;
+    width: auto;
 }
 
 
-/*nav ul, nav li{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}*/
+/*----------------MENU DE MOVILES---------------------*/
+
+
+#menu2 nav {
+    overflow: auto;
+    color: blue;
+    height: auto;
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+#menu2 nav ul {
+    list-style: none;
+}
+#menu2 li{
+    display: block;
+    background-color: whitesmoke;
+    border: 1px solid springgreen;
+    text-align: center;
+    border-radius: 0.25em 0.25em;
+    padding-left: 0.25em;
+}
+
+#menu2 li:hover {
+    background-color: springgreen;
+    color: blue;
+    cursor: pointer;
+}
+
+#menu2 nav>ul>li {
+    display: inline-block;
+    padding-right: 1.5em;
+}
+/*Submenu oculto*/
+#menu2 ul li ul {
+    display: none;
+    color: black;
+    width: 100%;
+}
+
+/*Items del segundo nivel*/
+#menu2 nav>ul>li>ul>li {
+    width: 100%;
+    min-height: 1em;
+    height: 100%;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+/*Submenu al hacerse visible*/
+#menu2 nav li:hover>ul {
+    display: block;
+    border: 1px solid blue;
+    cursor: pointer;
+    background-color: springgreen;
+    color: blue;
+    position: relative;
+    width: auto;
+}
